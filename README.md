@@ -1,2 +1,2 @@
-# Deep-learning-enhanced-electrcal-devices
+# AN IMPROVED LIGHTS AND FAN CONTROL SYSTEM USING YOLO DEEPLEARNING TO REDUCE ELECTRICITY COST
 human detection system using YOLO v3 
