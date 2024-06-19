@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <style>
+    body{
+        background-image: url('/static/homeai.gif');
+        background-size: 100%;
+        background-repeat: none;
+        background-position-y:-120px;
+    }
+    /* Center the button */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* This will make the button centered vertically */
+    }
+
+    /* Style the button */
+    .big-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 151px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 170px;
+    margin-bottom: 360px;
+}
+
+    /* Animation for color change */
+    @keyframes color-change {
+      0% {
+        background-color: red; /* Start color */
+      }
+      100% {
+        background-color: #2980b9; /* End color */
+      }
+    }
+
+    /* Class to trigger animation */
+    .animate-color-change {
+      animation: color-change 2s infinite alternate; /* Apply color change animation */
+    }
+
+    @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  h1.blinking {
+    animation: blink 1s infinite;
+  }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">LOGOUT</a></li>
+    </ul>
+  </nav>
+
+  <center><H1 style="color: white;" class="blinking"> AN AI BASED LIGHT AND FAN CONTROL</H1>
+  </center>
+  <!-- Centered button -->
+  <div class="center">
+    <a href="/startdetection" class="big-button" id="myButton">Start</a>
+  </div>
+
+  <script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      // Trigger animation after a short delay
+      setTimeout(function() {
+        var button = document.getElementById("myButton");
+        button.classList.add("animate-color-change");
+      }, 100);
+    });
+  </script>
+</body>
+</html>
